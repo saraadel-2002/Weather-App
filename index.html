@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="images/icons8-partly-cloudy-day-96.png" type="image/x-icon">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,400&family=Diphylleia&family=Rubik:wght@300;400;500&family=Tektur&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/media.css">
+     <title>Weather</title>
+</head>
+<body onload="getLocation()">
+     <section>
+          <div class="layer color d-flex justify-content-center align-items-center">
+               <div id="weather" class="content rounded-4 px-4 py-1 m-auto d-flex flex-column justify-content-center align-items-center">
+                    <div class="search pt-3 border-bottom w-100 m-auto d-flex align-items-center">
+                         <i class="fa-solid fa-magnifying-glass ps-2"></i>
+                         <input id="search" type="text" class="search form-control" placeholder="Find your location">
+                    </div>
+                    <div class="city w-100 pt-3 m-auto d-flex align-items-center justify-content-center">
+                    </div>
+                    <div class="w-100 row border-bottom pb-3 m-auto d-flex align-items-center justify-content-evenly">
+                         <div class="col-md-6 text-center pt-3">
+                              <img src="" id="weatherIcon" class="w-40" alt="">
+                              <p class="description diphylleia fw-light"></p>
+                         </div>
+                         <div class="text-center col-md-6">
+                              <div class="border-bottom w-75 m-auto pt-3">
+                                   <p onload="startTime()" id="clock" class="time fs-4 fw-bolder"></p>
+                                   <p id="dayOne" class="fs-3 pb-2 fw-normal diphylleia"></p>
+                              </div>
+                              <div>
+                                   <div class="pt-3 w-75 m-auto d-flex align-items-center justify-content-around">
+                                        <p class="fs-1 temp pe-1 fw-bold barlow"></p>
+                                        <div class=" fw-light rubik">
+                                             <span class="humidity d-flex align-items-center">
+                                             </span>
+                                             <span class="wind d-flex align-items-center">
+                                             </span>
+                                             <span class="compass d-flex align-items-center">
+                                             </span>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div id="days" class="days row w-100 m-auto pt-3 pb-2">
+                         <div class="day-2 border-right col-2 d-flex flex-column justify-content-center align-items-center">
+                              <p class="day2 fw-light fst-italic diphylleia"></p>
+                              <div class="img image2"></div>
+                              <p class="temp2 fw-light fst-italic barlow"></p>
+                         </div>
+                         <div class="col-2 border-right d-flex flex-column justify-content-center align-items-center">
+                              <p class="day3 diphylleia fw-light fst-italic"></p>
+                              <div class="img image3"></div>
+                              <p class="temp3 fw-light fst-italic barlow"></p>
+                         </div>
+                         <div class="col-2 border-right d-flex flex-column justify-content-center align-items-center">
+                              <p class="day4 diphylleia fw-light fst-italic"></p>
+                              <div class="img image4"></div>
+                              <p class="temp4 fw-light fst-italic barlow"></p>
+                         </div>
+                         <div class="col-2 border-right d-flex flex-column justify-content-center align-items-center">
+                              <p class="day5 diphylleia fw-light fst-italic"></p>
+                              <div class="img image5"></div>
+                              <p class="temp5 fw-light fst-italic barlow"></p>
+                         </div>
+                         <div class="col-2 border-right d-flex flex-column justify-content-center align-items-center">
+                              <p class="day6 diphylleia fw-light fst-italic"></p>
+                              <div class="img image6"></div>
+                              <p class="temp6 fw-light fst-italic barlow"></p>
+                         </div>
+                         <div class="col-2 d-flex flex-column justify-content-center align-items-center">
+                              <p class="day7 diphylleia fw-light fst-italic"></p>
+                              <div class="img image7"></div>
+                              <p class="temp7 fw-light fst-italic barlow"></p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

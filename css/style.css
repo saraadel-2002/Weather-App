@@ -1,0 +1,69 @@
+                                   /* edits */
+.color{
+     color: #f5f4f4;
+}
+.i-color{
+     color: #f5f4f4;
+}
+.border-bottom{
+     border-bottom: 0.5px solid gainsboro;
+}
+.border-right{
+     border-right: 0.5px solid gainsboro;
+}
+.w-40{
+     width: 40%;
+}
+
+                                   /* Start Section */
+section{
+     background-image: url(../images/clouds-8459053_1280.jpg);
+     background-size: cover;
+     background-position: bottom;
+     background-attachment: fixed;
+}
+section .layer{
+     background-color: rgba(0,0,0,0.3);
+     min-height: 100vh;
+}
+section .layer p ,h5{
+     margin: 0;
+}
+section .layer .content{
+     background: rgba(170, 170, 170, 0.5);
+     box-shadow: 0px 0px 20px 5px rgba(120, 120, 120, 0.6);
+     border: 0.5px solid rgba(190, 190, 190, 0.3);
+     min-height: 50vh;
+     min-width: 60%;
+     max-width: 80%;
+}
+section .layer .search i{
+     color: #f5f4f4;
+}
+section .layer .search input{
+     background-color: transparent !important;
+     border: none !important;
+     color: #f5f4f4 !important;
+}
+section .layer .search input:focus-visible{
+     outline: none !important;
+     box-shadow: none !important;
+}
+section .layer .search input::placeholder{
+     color: gainsboro !important;
+}
+                                   /* End Section */
+                                   /* start fonts */
+
+#weather .time{
+     font-family: 'Tektur', sans-serif;
+}
+.diphylleia{
+     font-family: 'Diphylleia', serif;
+}
+.rubik{
+     font-family: 'Rubik', sans-serif;
+}
+.barlow{
+     font-family: 'Barlow', sans-serif;
+}
